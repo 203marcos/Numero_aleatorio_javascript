@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function getRandom() {
+        //Math.random pega um valor entre 0 e 1, ou seja pode pega valores muito grandes, usamos "*10" para aumentar uma casa decimal e ela fica entre 10 - 0.
+        return Math.round(Math.random() * 10);
+}
+
+
+
+var numeroPensado = getRandom();
+var chute = parseInt(prompt("Digite o seu chute aqui: "));
+
+mostra(numeroPensado);
+
+if(chute == numeroPensado){
+    mostra("Voce acertou!");
+}else{
+    mostra("Voce errou!!");
+}
+
+
+
+
+
+
+</script>
